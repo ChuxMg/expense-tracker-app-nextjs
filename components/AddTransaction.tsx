@@ -8,7 +8,7 @@ const AddTransaction = () => {
   const formRef = useRef<HTMLFormElement>(null);
 
   const clientAction = async (formData: FormData) => {
-    console.log(formData.get("text"), formData.get("amount"));
+    // console.log(formData.get("text"), formData.get("amount"));
 
     const { data, error } = await addTransaction(formData);
 
@@ -19,7 +19,7 @@ const AddTransaction = () => {
       toast.success("Transaction added");
       formRef.current?.reset();
       //   alert("Transaction Added");
-      console.log(data);
+      // console.log(data);
     }
   };
 

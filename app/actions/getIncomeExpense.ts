@@ -6,7 +6,7 @@ import { auth } from "@clerk/nextjs/server";
 async function getIncomeExpense(): Promise<{
   income?: number;
   expense?: number;
-  error?: "string";
+  error?: string;
 }> {
   const { userId } = auth();
 
